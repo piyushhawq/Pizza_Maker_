@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Pizza Maker</title>
+    <link rel="shortcut icon" href="./img/pizza.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Styles/styles.css">
+    <script src="./jquery.js"></script>
+</head>
+
+<body>
+
+        <h3>Size :-</h3>
+        <form id='pizza' action="">
+            <label class="radio">
+                <input type="radio" class="radioIn" id="small" name="size" value="small">
+                <span class="fakeRadio"></span><span>Small</span>
+            </label>
+
+            <label class="radio">
+                <input type="radio" class="radioIn" id="mid" name="size" value="mid">
+                <span class="fakeRadio"></span><span>Medium</span>
+            </label>
+
+            <label class="radio">
+                <input type="radio" class="radioIn" id="big" name="size" value="big" checked="true">
+                <span class="fakeRadio"></span><span>Large</span>
+            </label>
+        </form>
+        
+        <div class="table-wrapper">
+            <div class="droppable">
+                <img src="Pizza_pictures/klassicheskij-bortik_1556622914630.png" id="cake" alt="">
+            </div>
+
+            <div class="ingridients">
+                <h3>Sauce :- </h3>
+                <div class="ing_cont">
+                    <img draggable="true" class="draggable" id="sauceClassic"
+                        src="Pizza_pictures/sous-klassicheskij_1557758736353.png" alt="ketchup">
+                    <span>Ketchup :- 5 Rs</span>
+                </div>
+                <div class="ing_cont">
+                    <img draggable="true" class="draggable" id="sauceBBQ" src="Pizza_pictures/sous-bbq_155679418013.png"
+                        alt="bbq">
+                    <span>BBQ :- 10 Rs</span>
+                </div>
+                <div class="ing_cont">
+                    <img draggable="true" class="draggable" id="sauceRikotta"
+                        src="Pizza_pictures/sous-rikotta_1556623391103.png" alt="chipotle">
+                    <span>Chipotle  :- 15 Rs</span>
+                </div>
+                <h3>Topings :-</h3>
+                <div class="ing_cont">
+                    <img draggable="true" class="draggable" id="moc1" src="Pizza_pictures/mocarela_1556623220308.png"
+                        alt=""cheese>
+                    <span>Common Cheese :- 20 Rs</span>
+                </div>
+                <div class="ing_cont">
+                    <img draggable="true" class="draggable" id="moc2" src="Pizza_pictures/mocarela_1556785182818.png"
+                        alt="">
+                    <span>Feta Cheese :- 10 Rs</span>
+                </div>
+                <div class="ing_cont">
+                    <img draggable="true" class="draggable" id="moc3" src="Pizza_pictures/mocarela_1556785198489.png"
+                        alt="">
+                    <span>Mozzarella :- 15 Rs</span>
+                </div>
+                <div class="ing_cont">
+                    <img draggable="true" class="draggable" id="telya" src="Pizza_pictures/telyatina_1556624025747.png"
+                        alt="">
+                    <span>Meat:- 30 Rs</span>
+                </div>
+                <div class="ing_cont">
+                    <img draggable="true" class="draggable" id="vetch1" src="Pizza_pictures/vetchina.png" alt="">
+                    <span>Tomato:- 10 Rs</span>
+                </div>
+                <div class="ing_cont">
+                    <img draggable="true" class="draggable" id="vetch2" src="Pizza_pictures/vetchina_1556623556129.png"
+                        alt="">
+                    <span>Mushrooms :- 15 Rs</span>
+                </div>
+            </div>
+        </div>
+        <div class="result">
+            <div class="price">
+                <p>Price :- <span class="span_price"></span></p>
+            </div>
+            <div class="sauces">
+                <p>Sauces :- <span class="span_sauces"></span></p>
+            </div>
+            <div class="topings">
+                <p>Toppings :- <span class="span_toppings"></span></p>
+            </div>
+        </div>
+    </main>
+    <script src="./JavaScript/ConstructorPizza.js"></script>
+    <script src="./JavaScript/Sale.js"></script>
+
+    <script src="./JavaScript/ConfirmOrder.js"></script>
+</body>
+
+</html>
